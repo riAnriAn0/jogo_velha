@@ -2,6 +2,8 @@
 
 *{
     font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 #tabuleiro{
@@ -10,11 +12,13 @@
     width: 300px;
     height: 300px;
     display: grid;
+    border: 2px solid black;
     grid-template-columns:100px 100px 100px;
     grid-template-rows: 100px 100px 100px;
 } 
 
 .posicao{
+    border: 2px solid black;
     text-align: center;
     font-weight: 500;
     font-size: 3.5em;
@@ -43,6 +47,30 @@
     display: none;
 }
 
-.sumir{
+.aparecer{
     display: block;
+}
+
+.placar{
+    display:flex;
+    width: 250px;
+    height:100px;
+    margin:auto;
+    margin-top: 20px;
+}
+
+.placar div{
+    width: 49%;
+    text-align: center;
+    border: 2px solid black;
+    margin-left: 5px;
+} 
+
+.placar input{
+    width: 100%;
+    font-weight: 700;
+    font-size: 2em;
+    border: none;
+    text-align: center;
+    color: rgb(46, 46, 201);
 }
